@@ -1,0 +1,60 @@
+{
+  "id": "c1c15f91a307451bb2b72ded4b45b68d",
+  "title": "ML  vs  Deep learning.pdf",
+  "updated_at": "2026-05-29T15:54:05.851236",
+  "messages": [
+    {
+      "role": "user",
+      "content": "\"Can you say what this file saying in outline\"",
+      "timestamp": "2026-05-29T15:54:05.850515",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "FINAL RESULT\nThe file discusses the basics of Machine Learning (ML) and Deep Learning, including supervised, unsupervised, and reinforcement learning, data types, and models such as Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN). It also covers Natural Language Processing (NLP) methods, transfer learning, and computer vision.\n\nEXPLANATION\nThe provided context is a collection of pages from a document titled \"ML vs Deep learning.pdf\". The document covers various topics related to Machine Learning and Deep Learning, including types of learning, data types, models, and techniques. The outline of the file can be summarized as follows: \n1. Introduction to Machine Learning and its types (supervised, unsupervised, reinforcement learning)\n2. Data types (structured and unstructured) and their applications\n3. Machine Learning models (ANN, CNN, etc.) and techniques (transfer learning, etc.)\n4. Natural Language Processing (NLP) methods and computer vision\n5. Model optimization and performance improvement techniques.",
+      "timestamp": "2026-05-29T15:54:05.850461",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": [
+        {
+          "source": "ML  vs  Deep learning.pdf",
+          "chunk_id": 2,
+          "content": "Machine learning\n supervised learning unsupervised learning Reinforcement learning\n DATA NO DATA\n predict(Target) 1. Cluster analysis Environment, status, rewards, penalties\n 2. PCA Agent\n 3. recommendation system\n Regression classification\n(Target: continues) (Target: categorical) \nLinear regression 1. Logistic Regression1.\n2. Support vector regression 2. Support vector classifier\n3. Decision tree regression 3. Decision tree classifier\nOver fitting:\nPCA: reduces the variables\nRegularization: Lasso, ridge,\nEnsemble methods: Bagging, random forest, gradient boost, adaboost\u2026\nMetrics:\nR square: (0 to 1) score: accuracy score\nMSE: lowest value log loss for binary, log loss for multiclass\n=================================================================================================\nText data: Natural language processing methods, such as text can be converted in to structured and numerical data\nTF IDF method\nWord Embedding method (Skipgram, cbow)\nContextualized methods: Transformers\n # of columns will becomes huge in size\nImage data: Deep learning models (ANN, CNN, RNN)\nConvert the image data in to structured data \n=================================================================================================\nDeep learning models\nANN model?\nANN: Artificial neural networks -----> inspired on the basis of how human brain actually works\n Feed Forward Propagation\n \n w1\n Y, Y pred = error\n w2\n w3\n Back propagation method\n x1 x2 x3 Y Input layer output layer\n VAC_AI_Apr 1st Page 2",
+          "doc_id": "99900012381e5c0f",
+          "page": 2,
+          "score": 1.0
+        },
+        {
+          "source": "ML  vs  Deep learning.pdf",
+          "chunk_id": 10,
+          "content": "Why can't we use our previous models for further model development\nImport 100 classes models which is already prepared by some one, I want add extra new classes to the existing python code\nWe are tranfering the knowledge from the past model and we are making a new model on it.\nTransfer learning:\n==============================\nTransfer learning:\nThis is something saving our time , instead of writing the code from scratch we are going to \nuse a pre built models.\n\u2022 In traditional machine learning approaches, models are trained from scratch for each specific task. \nHowever, transfer learning leverages knowledge gained from solving one task and applies it to a \ndifferent but related task.\nFeature TensorFlow Hugging Face\nCNN Models \u2705Strong \nTransformers \u2705Very Strong\nLLMs \u274cLimited \u2705Advanced\nGenerative AI \u2705Excellent\n==============================\n VAC_AI_Apr 1st Page 10",
+          "doc_id": "99900012381e5c0f",
+          "page": 10,
+          "score": 0.7452341275491943
+        },
+        {
+          "source": "ML  vs  Deep learning.pdf",
+          "chunk_id": 1,
+          "content": "All our data is received or getting saved in the industries in their internal databases\nBanking: phone pay -----> millions\nPharma\nHealthcare\nInsurance\nFinance\nEducation\nTravels\nLogistics\nTrade\nManufacturing\nEntertainment\nEcommerce\nLarge amount of data is storing o\n==================================================================================================\nData:\nStructured data: Tabular format, rows, columns\nUnstructured data: No proper format \nBusiness documents, PPT, pdf, word, audio, videos, images, scanning reports, X rays, prescription, articles, blogs,\nReviews, feedback, comments, chatting, \n====================================================================================================\nUnderstand the data first what kind of format received us apply related analytics and come up with business solutions.\nLow investment , high profit\n==================================================================================================\nMachine learning\nNatural language processing\nDeep learning\nGen AI \nAgentic AI\n==================================================================================================\nWhat is meant by machine learning?\nComputer ----------> trained ----> large amount of data\nFeed the knowledge to the computer by writing a efficient code using such as python language\n (libraries)\nML vs Deep learning\n01 April 2026 15:01\n VAC_AI_Apr 1st Page 1",
+          "doc_id": "99900012381e5c0f",
+          "page": 1,
+          "score": 0.6363943549225091
+        },
+        {
+          "source": "ML  vs  Deep learning.pdf",
+          "chunk_id": 6,
+          "content": "Adam \u2705(most used) ---> \u2022\nSGD (with momentum) \u2705----> \u2022\n================================================================================================\nMulti class classification:\nY actual X Y_ele Y_tig Y_man YPred\nElephant 1200 0.90 0.08 0.02 elephant\nTiger 250 0.3 0.65 0.05 tiger \nMan 70 0.03 0.10 0.87 man\nTo improve the performance\nAdd the epochs1.\nChange the learning rates2.\nChange the optimizers by tuning learning rates3.\nAdd the hidden layers4.\nChange the activation functions.5.\n===============================================================================================\nComputer vision:\nWhat is computer\nTraining our machine such that computer can also read image data\nEvery pixel has color variation of Red, Green, blue\nEach color variation will be in 0 to 255.\n VAC_AI_Apr 1st Page 6",
+          "doc_id": "99900012381e5c0f",
+          "page": 6,
+          "score": 0.5088051355272729
+        }
+      ]
+    }
+  ]
+}

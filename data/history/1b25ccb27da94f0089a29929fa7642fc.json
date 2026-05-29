@@ -1,0 +1,107 @@
+{
+  "id": "1b25ccb27da94f0089a29929fa7642fc",
+  "title": "Universities.csv",
+  "updated_at": "2026-05-29T16:02:53.594897",
+  "messages": [
+    {
+      "role": "user",
+      "content": "\"How many records in csv files:\nsay in one line sentence\"",
+      "timestamp": "2026-05-29T15:56:50.486248",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "TABLE VIEW\n| Metric | Value |\n| --- | --- |\n| Count of records | 25 |\n\nRESULT\nThe provided dataset contains 25 total records.",
+      "timestamp": "2026-05-29T15:56:50.486223",
+      "ai_answer": null,
+      "sql_query": "SELECT COUNT(*) AS total_records FROM csv;",
+      "excel_formula": "=COUNTA(A:A)-1",
+      "csv_data": "Univ,SAT,Top10,Accept,SFRatio,Expenses,GradRate\r\nBrown,1310,89,22,13,22704,94\r\nCalTech,1415,100,25,6,63575,81\r\nCMU,1260,62,59,9,25026,72\r\nColumbia,1310,76,24,12,31510,88\r\nCornell,1280,83,33,13,21864,90\r\nDartmouth,1340,89,23,10,32162,95\r\nDuke,1315,90,30,12,31585,95\r\nGeorgetown,1255,74,24,12,20126,92\r\nHarvard,1400,91,14,11,39525,97\r\nJohnsHopkins,1305,75,44,7,58691,87\r\nMIT,1380,94,30,10,34870,91\r\nNorthwestern,1260,85,39,11,28052,89\r\nNotreDame,1255,81,42,13,15122,94\r\nPennState,1081,38,54,18,10185,80\r\nPrinceton,1375,91,14,8,30220,95\r\nPurdue,1005,28,90,19,9066,69\r\nStanford,1360,90,20,12,36450,93\r\nTexasA&M,1075,49,67,25,8704,67\r\nUCBerkeley,1240,95,40,17,15140,78\r\nUChicago,1290,75,50,13,38380,87\r\nUMichigan,1180,65,68,16,15470,85\r\nUPenn,1285,80,36,11,27553,90\r\nUVA,1225,77,44,14,13349,92\r\nUWisconsin,1085,40,69,15,11857,71\r\nYale,1375,95,19,11,43514,96\r\n",
+      "source_chunks": []
+    },
+    {
+      "role": "user",
+      "content": "\"show top 10 row in csv file\"",
+      "timestamp": "2026-05-29T15:59:36.069117",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "TABLE VIEW\n| Univ | SAT | Top10 | Accept | SFRatio | Expenses | GradRate |\n| --- | --- | --- | --- | --- | --- | --- |\n| CalTech | 1415 | 100 | 25 | 6 | 63575 | 81 |\n| Harvard | 1400 | 91 | 14 | 11 | 39525 | 97 |\n| MIT | 1380 | 94 | 30 | 10 | 34870 | 91 |\n| Princeton | 1375 | 91 | 14 | 8 | 30220 | 95 |\n| Yale | 1375 | 95 | 19 | 11 | 43514 | 96 |\n| Stanford | 1360 | 90 | 20 | 12 | 36450 | 93 |\n| Dartmouth | 1340 | 89 | 23 | 10 | 32162 | 95 |\n| Duke | 1315 | 90 | 30 | 12 | 31585 | 95 |\n| Brown | 1310 | 89 | 22 | 13 | 22704 | 94 |\n| Columbia | 1310 | 76 | 24 | 12 | 31510 | 88 |\n\nRESULT\nThe result shows the top 10 row(s), sorted by SAT in descending order from the provided file.",
+      "timestamp": "2026-05-29T15:59:36.069110",
+      "ai_answer": null,
+      "sql_query": "SELECT MAX(\"SAT\") AS max_sat FROM csv;",
+      "excel_formula": "=MAX(B:B)",
+      "csv_data": "Univ,SAT,Top10,Accept,SFRatio,Expenses,GradRate\r\nBrown,1310,89,22,13,22704,94\r\nCalTech,1415,100,25,6,63575,81\r\nCMU,1260,62,59,9,25026,72\r\nColumbia,1310,76,24,12,31510,88\r\nCornell,1280,83,33,13,21864,90\r\nDartmouth,1340,89,23,10,32162,95\r\nDuke,1315,90,30,12,31585,95\r\nGeorgetown,1255,74,24,12,20126,92\r\nHarvard,1400,91,14,11,39525,97\r\nJohnsHopkins,1305,75,44,7,58691,87\r\nMIT,1380,94,30,10,34870,91\r\nNorthwestern,1260,85,39,11,28052,89\r\nNotreDame,1255,81,42,13,15122,94\r\nPennState,1081,38,54,18,10185,80\r\nPrinceton,1375,91,14,8,30220,95\r\nPurdue,1005,28,90,19,9066,69\r\nStanford,1360,90,20,12,36450,93\r\nTexasA&M,1075,49,67,25,8704,67\r\nUCBerkeley,1240,95,40,17,15140,78\r\nUChicago,1290,75,50,13,38380,87\r\nUMichigan,1180,65,68,16,15470,85\r\nUPenn,1285,80,36,11,27553,90\r\nUVA,1225,77,44,14,13349,92\r\nUWisconsin,1085,40,69,15,11857,71\r\nYale,1375,95,19,11,43514,96\r\n",
+      "source_chunks": []
+    },
+    {
+      "role": "user",
+      "content": "\"can u show most expense univ in csv file:\nshow only one\"",
+      "timestamp": "2026-05-29T16:00:57.059073",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "TABLE VIEW\n| Univ |\n| --- |\n| Brown |\n| CalTech |\n| CMU |\n| Columbia |\n| Cornell |\n| Dartmouth |\n| Duke |\n| Georgetown |\n| Harvard |\n| JohnsHopkins |\n| MIT |\n| Northwestern |\n| NotreDame |\n| PennState |\n| Princeton |\n| Purdue |\n| Stanford |\n| TexasA&M |\n| UCBerkeley |\n| UChicago |\n| UMichigan |\n| UPenn |\n| UVA |\n| UWisconsin |\n| Yale |\n\nRESULT\nThe provided file contains 25 unique value(s) for Univ.",
+      "timestamp": "2026-05-29T16:00:57.059067",
+      "ai_answer": null,
+      "sql_query": "SELECT * FROM csv LIMIT 20;",
+      "excel_formula": "Use Excel filters or PivotTable based on the displayed result.",
+      "csv_data": "Univ,SAT,Top10,Accept,SFRatio,Expenses,GradRate\r\nBrown,1310,89,22,13,22704,94\r\nCalTech,1415,100,25,6,63575,81\r\nCMU,1260,62,59,9,25026,72\r\nColumbia,1310,76,24,12,31510,88\r\nCornell,1280,83,33,13,21864,90\r\nDartmouth,1340,89,23,10,32162,95\r\nDuke,1315,90,30,12,31585,95\r\nGeorgetown,1255,74,24,12,20126,92\r\nHarvard,1400,91,14,11,39525,97\r\nJohnsHopkins,1305,75,44,7,58691,87\r\nMIT,1380,94,30,10,34870,91\r\nNorthwestern,1260,85,39,11,28052,89\r\nNotreDame,1255,81,42,13,15122,94\r\nPennState,1081,38,54,18,10185,80\r\nPrinceton,1375,91,14,8,30220,95\r\nPurdue,1005,28,90,19,9066,69\r\nStanford,1360,90,20,12,36450,93\r\nTexasA&M,1075,49,67,25,8704,67\r\nUCBerkeley,1240,95,40,17,15140,78\r\nUChicago,1290,75,50,13,38380,87\r\nUMichigan,1180,65,68,16,15470,85\r\nUPenn,1285,80,36,11,27553,90\r\nUVA,1225,77,44,14,13349,92\r\nUWisconsin,1085,40,69,15,11857,71\r\nYale,1375,95,19,11,43514,96\r\n",
+      "source_chunks": []
+    },
+    {
+      "role": "user",
+      "content": "\"In Expenses above 100000 only show :\ntop 3 \"",
+      "timestamp": "2026-05-29T16:01:58.578571",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "TABLE VIEW\nThe requested information is not available in the provided file.\n\nRESULT\nThe provided file does not contain the requested information.",
+      "timestamp": "2026-05-29T16:01:58.578566",
+      "ai_answer": null,
+      "sql_query": "SELECT * FROM csv WHERE \"Expenses\" > 100000;",
+      "excel_formula": "=FILTER(A:Z,F:F>100000)",
+      "csv_data": "Univ,SAT,Top10,Accept,SFRatio,Expenses,GradRate\r\nBrown,1310,89,22,13,22704,94\r\nCalTech,1415,100,25,6,63575,81\r\nCMU,1260,62,59,9,25026,72\r\nColumbia,1310,76,24,12,31510,88\r\nCornell,1280,83,33,13,21864,90\r\nDartmouth,1340,89,23,10,32162,95\r\nDuke,1315,90,30,12,31585,95\r\nGeorgetown,1255,74,24,12,20126,92\r\nHarvard,1400,91,14,11,39525,97\r\nJohnsHopkins,1305,75,44,7,58691,87\r\nMIT,1380,94,30,10,34870,91\r\nNorthwestern,1260,85,39,11,28052,89\r\nNotreDame,1255,81,42,13,15122,94\r\nPennState,1081,38,54,18,10185,80\r\nPrinceton,1375,91,14,8,30220,95\r\nPurdue,1005,28,90,19,9066,69\r\nStanford,1360,90,20,12,36450,93\r\nTexasA&M,1075,49,67,25,8704,67\r\nUCBerkeley,1240,95,40,17,15140,78\r\nUChicago,1290,75,50,13,38380,87\r\nUMichigan,1180,65,68,16,15470,85\r\nUPenn,1285,80,36,11,27553,90\r\nUVA,1225,77,44,14,13349,92\r\nUWisconsin,1085,40,69,15,11857,71\r\nYale,1375,95,19,11,43514,96\r\n",
+      "source_chunks": []
+    },
+    {
+      "role": "user",
+      "content": "\"show max Expenses table :\nonly one show\"",
+      "timestamp": "2026-05-29T16:02:53.594809",
+      "ai_answer": null,
+      "sql_query": null,
+      "excel_formula": null,
+      "csv_data": null,
+      "source_chunks": []
+    },
+    {
+      "role": "assistant",
+      "content": "TABLE VIEW\n| Metric | Value | Univ | SAT | Top10 | Accept | SFRatio | Expenses | GradRate |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Highest Expenses | 63575 |  |  |  |  |  |  |  |\n|  |  | CalTech | 1415 | 100 | 25 | 6 | 63575 | 81 |\n\nRESULT\nThe highest Expenses in the provided file is 63575, and the matching record is shown in the table.",
+      "timestamp": "2026-05-29T16:02:53.594804",
+      "ai_answer": null,
+      "sql_query": "SELECT MAX(\"Expenses\") AS max_expenses FROM csv;",
+      "excel_formula": "=MAX(F:F)",
+      "csv_data": "Univ,SAT,Top10,Accept,SFRatio,Expenses,GradRate\r\nBrown,1310,89,22,13,22704,94\r\nCalTech,1415,100,25,6,63575,81\r\nCMU,1260,62,59,9,25026,72\r\nColumbia,1310,76,24,12,31510,88\r\nCornell,1280,83,33,13,21864,90\r\nDartmouth,1340,89,23,10,32162,95\r\nDuke,1315,90,30,12,31585,95\r\nGeorgetown,1255,74,24,12,20126,92\r\nHarvard,1400,91,14,11,39525,97\r\nJohnsHopkins,1305,75,44,7,58691,87\r\nMIT,1380,94,30,10,34870,91\r\nNorthwestern,1260,85,39,11,28052,89\r\nNotreDame,1255,81,42,13,15122,94\r\nPennState,1081,38,54,18,10185,80\r\nPrinceton,1375,91,14,8,30220,95\r\nPurdue,1005,28,90,19,9066,69\r\nStanford,1360,90,20,12,36450,93\r\nTexasA&M,1075,49,67,25,8704,67\r\nUCBerkeley,1240,95,40,17,15140,78\r\nUChicago,1290,75,50,13,38380,87\r\nUMichigan,1180,65,68,16,15470,85\r\nUPenn,1285,80,36,11,27553,90\r\nUVA,1225,77,44,14,13349,92\r\nUWisconsin,1085,40,69,15,11857,71\r\nYale,1375,95,19,11,43514,96\r\n",
+      "source_chunks": []
+    }
+  ]
+}
