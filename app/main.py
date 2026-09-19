@@ -633,8 +633,6 @@ def render_chat() -> None:
         answer_question(question)
         st.rerun()
 
-    st.markdown("<div class='app-footer'>© Saivignesh — All Rights Reserved</div>", unsafe_allow_html=True)
-
 
 def render_theme() -> None:
     if st.session_state.theme_mode == "Dark":
@@ -779,7 +777,7 @@ def render_dashboard() -> None:
         st.progress(1.0, text="Embedding progress complete")
     else:
         st.info("Upload files to populate file analytics.")
-    st.markdown("<div class='app-footer'>© Saivignesh — All Rights Reserved</div>", unsafe_allow_html=True)
+    st.markdown("<div class='app-footer'>© Saimageswari — All Rights Reserved</div>", unsafe_allow_html=True)
 
 
 def active_provider_model() -> tuple[str, str]:
@@ -856,7 +854,7 @@ def render_settings_page() -> None:
     )
     if current_settings != previous_settings and st.session_state.documents:
         build_pipeline(st.session_state.documents, st.session_state.current_file_id)
-    st.markdown("<div class='app-footer'>© Saivignesh — All Rights Reserved</div>", unsafe_allow_html=True)
+    st.markdown("<div class='app-footer'>© Saimageswari — All Rights Reserved</div>", unsafe_allow_html=True)
 
 
 def render_history_page() -> None:
