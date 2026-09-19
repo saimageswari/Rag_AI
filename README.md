@@ -111,7 +111,7 @@ streamlit run app.py --server.fileWatcherType none
 Then open the local URL Streamlit prints, usually:
 
 ```text
-http://localhost:8501
+(https://aymcp4actmsnw3vevtugts.streamlit.app/)
 ```
 
 ## How It Works
